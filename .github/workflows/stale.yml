@@ -20,4 +20,5 @@ jobs:
 
 
 #     - run: python autoPy.py
-    - run: python /home/runner/work/autoPython/autoPy.py
+#     - run: python /home/runner/work/autoPython/autoPy.py
+    - run: ls -al
