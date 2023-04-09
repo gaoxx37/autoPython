@@ -21,4 +21,5 @@ jobs:
 
     - name: SSR CheckOut
       run: |
+        ls ${{ github.workspace }}
         python autoPy.py
