@@ -15,8 +15,16 @@ jobs:
         python-version: '3.10'
 
 
-    - run: ls -al
-    - run: python autoPy.py
-    - run: ls -al
+#     - run: ls -al
+#     - run: python autoPy.py
+#     - run: ls -al
+    - name: Commit files  # transfer the new html files back into the repository
+      run: |
+        python autoPy.py
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "generated"
+        git push
     
 
