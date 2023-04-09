@@ -15,11 +15,8 @@ jobs:
         python-version: '3.10'
 
 
-#     - run: ls -al
-#     - run: python autoPy.py
-#     - run: python /home/runner/work/autoPython/autoPy.py
+    - run: ls -al
+    - run: python autoPy.py
+    - run: ls -al
+    
 
-    - name: SSR CheckOut
-      run: |
-        ls ${{ github.workspace }}
-        python autoPy.py
