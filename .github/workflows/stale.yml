@@ -19,4 +19,4 @@ jobs:
 #         cache: 'poetry'
 
 
-    - run: run python autoPy.py
+    - run: python autoPy.py
