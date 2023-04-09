@@ -1,0 +1,22 @@
+name: Schedule Worker
+
+on:
+  schedule:
+  - cron: '*/10 * * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'poetry'
+
+
+    - run: poetry run python autoPy.py
