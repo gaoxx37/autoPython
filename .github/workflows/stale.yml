@@ -15,6 +15,10 @@ jobs:
         python-version: '3.10'
 
 
-    - run: ls -al
-    - run: python autoPy.py
+#     - run: ls -al
+#     - run: python autoPy.py
 #     - run: python /home/runner/work/autoPython/autoPy.py
+
+    - name: SSR CheckOut
+      run: |
+        python autoPy.py
