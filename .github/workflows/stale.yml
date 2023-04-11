@@ -3,7 +3,7 @@ name: Schedule Worker
 on:
   schedule:
 #   - cron: '*/5 * * * *' #每5分钟执行一次
-  - cron: 0 15 10 15 * ?	#每月15日上午10:15执行任务
+  - cron: 0 15 10 12 * ?	#每月15日上午10:15执行任务
 
 jobs:
   build:
